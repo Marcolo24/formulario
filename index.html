@@ -5,32 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi segundo Formulario</title>
+    <style>
+        input,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <h1>Formulario para registrar mascotas</h1>
     <form action="">
-        <input type="text" placeholder="nombre...">
+        <input type="text" placeholder="nombre">
         <input type="date">
-        <input type="email" placeholder="inserte email...">
-        <input type="color">
-        <input type="url" placeholder="link aqui...">
-        <input type="checkbox">
-        <input type="password" placeholder="password...">
-        <input type="submit" value="enviar datos">
-        <select>
-            <option value="hombre">hombre</option>
-            <option value="mujer">mujer</option>
-            <option value="prefiero no decirlo">prefiero no decirlo</option>
-            <option value="no binario">no binario</option>
-            <option value="ojalá">ojalá</option>
-            <option value="ayuda">ayuda</option>
-            <option value="compañere">compañere</option>
-            <option value="travolo">travolo</option>
-            <option value="otros">otros</option>
-        </select>
-        <input type="button" value="botón">
+        <select name="">
+            <option value="" >Seleccione RegiÃ³n</option>
+            <select name="" id=""></select>
+        <input type="submit" value="Enviar datos">
     </form>
+
+    <h1>Formulario para registrar alumnos</h1>
+
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <label for="">Primer Apellido</label>
+        <input type="text" name="Primer Apellido" placeholder="Primer Apellido">
+        <label for="">Segundo Apellido</label>
+        <input type="text" name="Segundo Apellido" placeholder="Segundo Apellido">
+        <label for="">Datos de tutor</label>
+        <input type="text" name="Datos de tutor" placeholder="Datos de tutor">
+        <label for="">Edad</label>
+        <input type="date" name="Edad" placeholder="Edad">
+        <label for="">Estudios de Procedencia</label>
+        <select name="" id="">
+            <option value="">seleccione estudios de procedencia</option>
+        </select>
+        <input type="submit" value="Enviar datos de Alumnos">
+    </form>
+
 </body>
 
 </html>
